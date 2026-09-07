@@ -1,0 +1,3 @@
+import assert from 'node:assert/strict';import{mapInput}from'./mapper.mjs';
+const ok=mapInput({requiredRoles:['client','producer'],answers:[{role:'client',field:'deadline',value:'2026-10-01'},{role:'producer',field:'deadline',value:'2026-10-01'}]});assert.equal(ok.valid,true);
+const fail=mapInput({requiredRoles:['client','producer'],answers:[{role:'client',field:'deadline',value:'2026-10-01'},{role:'producer',field:'deadline',value:'2026-10-12'},{role:'client',field:'format',value:'16:9'}]});assert.equal(fail.gaps.length,1);assert.equal(fail.conflicts.length,1);console.log('PASS stakeholder mapper scenarios: 2/2');

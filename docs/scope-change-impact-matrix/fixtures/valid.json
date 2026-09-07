@@ -1,0 +1,32 @@
+{
+  "baseline": [
+    {
+      "id": "edit",
+      "dependencies": []
+    },
+    {
+      "id": "grade",
+      "dependencies": [
+        "edit"
+      ]
+    }
+  ],
+  "proposed": [
+    {
+      "id": "edit",
+      "dependencies": []
+    },
+    {
+      "id": "grade",
+      "dependencies": [
+        "edit"
+      ]
+    },
+    {
+      "id": "social",
+      "dependencies": [
+        "grade"
+      ]
+    }
+  ]
+}

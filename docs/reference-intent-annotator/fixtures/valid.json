@@ -1,0 +1,19 @@
+{
+  "references": [
+    {
+      "source": "https://example.com/film?utm_source=test#shot",
+      "intents": [
+        "lighting"
+      ],
+      "shotIds": [
+        "s01"
+      ]
+    },
+    {
+      "source": "Mood note: restrained motion",
+      "intents": [
+        "motion"
+      ]
+    }
+  ]
+}

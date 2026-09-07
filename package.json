@@ -1,0 +1,13 @@
+{
+  "name": "@shar-production/production-brief-readiness-tools",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "author": "SHAR Production (https://sharprod.com/)",
+  "homepage": "https://sharprod.com/",
+  "description": "Browser-local production brief readiness utilities.",
+  "scripts": {
+    "test": "node tools/reference-intent-annotator/verify.mjs && node tools/scope-change-impact-matrix/verify.mjs && node tools/stakeholder-input-gap-mapper/verify.mjs"
+  }
+}
